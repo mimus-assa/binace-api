@@ -1,76 +1,58 @@
+from binance import Client
+from flask import Flask, render_template, request, redirect, url_for
+from binance.enums import *
+from flask_bootstrap import Bootstrap
 
-# Binance API setup
 api_key = ''
 api_secret = ''
 client = Client(api_key, api_secret)
 
-# Flask API setup
 app = Flask(__name__)
+Bootstrap(app)
 
-@app.route('/market', methods=['POST'])
+@app.route('/')
+def index():
+    return redirect(url_for('market'))
+
+@app.route('/market', methods=['GET', 'POST'])
 def market():
-    data = request.get_json()
-    quantity = data['quantity']
-    side = data["side"]
-    if side=="SIDE_BUY":
-        side2 = SIDE_BUY
-    elif side=="SIDE_SELL":
-        side2= SIDE_SELL
-    # buy margin loan
-    client.create_margin_order(symbol="BTCBUSD", side=side2, type="MARKET",quantity=quantity, sideEffectType="MARGIN_BUY",isIsolated=True)
-    return 'OK'
+    if request.method == 'POST':
+        quantity = request.form['quantity']
+        side = request.form['side']
+        if side == 'SIDE_BUY':
+            side2 = SIDE_BUY
+        elif side == 'SIDE_SELL':
+            side2 = SIDE_SELL
+        buy_loan = client.create_margin_order(symbol="BTCBUSD", side=side2, type="MARKET", quantity=quantity, sideEffectType="MARGIN_BUY", isIsolated=True)
+        return render_template('market.html', result=buy_loan)
+    return render_template('market.html')
 
-@app.route('/trade_btc_busd_margin_long', methods=['POST'])
-def trade_btc_busd_margin_long():
-    data = request.get_json()
-    quantity = data['quantity']
-    price_a = data['price_a']
-    price_b = data['price_b']
-    # buy margin loan
-    client.create_margin_order(symbol="BTCBUSD", side=SIDE_BUY, type="MARKET",quantity=quantity, sideEffectType="MARGIN_BUY",isIsolated=True)
-    # loop until price reaches either price_a or price_b
-    while True:
-        ticker = client.get_ticker(symbol='BTCBUSD')
-        current_price = float(ticker['lastPrice'])
-        if current_price >= price_a or current_price <= price_b:
-            side = SIDE_SELL if current_price >= price_a else SIDE_BUY
-            client.create_margin_order(symbol="BTCBUSD", side=side, type="MARKET",quantity=quantity , sideEffectType="AUTO_REPAY",isIsolated=True)
+@app.route('/oco', methods=['GET', 'POST'])
+def oco():
+    if request.method == 'POST':
+        quantity = request.form['quantity']
+        price_a = request.form['price_a']
+        price_b = request.form['price_b']
+        side = request.form['side']
+        while True:
+            ticker = client.get_ticker(symbol='BTCBUSD')
+            current_price = float(ticker['lastPrice'])
+            if side == 'FROM_SHORT':
+                if current_price >= price_a:
+                    sell_loan = client.create_margin_order(symbol="BTCBUSD", side=SIDE_BUY, type="MARKET", quantity=quantity, sideEffectType="AUTO_REPAY", isIsolated=True)
+                    break
+                elif current_price <= price_b:
+                    sell_loan = client.create_margin_order(symbol="BTCBUSD", side=SIDE_BUY, type="MARKET", quantity=quantity, sideEffectType="AUTO_REPAY", isIsolated=True)
+                    break
+            elif side == 'FROM_LONG':
+                if current_price >= price_a:
+                    sell_loan = client.create_margin_order(symbol="BTCBUSD", side=SIDE_SELL, type="MARKET", quantity=quantity, sideEffectType="AUTO_REPAY", isIsolated=True)
+                    break
+                elif current_price <= price_b:
+                    sell_loan = client.create_margin_order(symbol="BTCBUSD", side=SIDE_SELL, type="MARKET", quantity=quantity, sideEffectType="AUTO_REPAY", isIsolated=True)
             break
-    return 'OK'
-
-
-@app.route('/trade_btc_busd_margin_short', methods=['POST'])
-@app.route('/trade_btc_busd_margin_long_oco', methods=['POST'])
-@app.route('/trade_btc_busd_margin_short_oco', methods=['POST'])
-def trade_btc_busd_margin_short_or_long_oco():
-    data = request.get_json()
-    quantity = data['quantity']
-    price_a = data['price_a']
-    price_b = data['price_b']
-    # buy/sell margin loan
-    side = SIDE_SELL if request.path == '/trade_btc_busd_margin_short' else SIDE_BUY
-    client.create_margin_order(symbol="BTCBUSD", side=side, type="MARKET",quantity=quantity, sideEffectType="MARGIN_BUY",isIsolated=True)
-    # loop until price reaches either price_a or price_b
-    while True:
-        ticker = client.get_ticker(symbol='BTCBUSD')
-        current_price = float(ticker['lastPrice'])
-        if current_price >= price_a or current_price <= price_b:
-            side = SIDE_SELL if current_price >= price_a else SIDE_BUY
-            client.create_margin_order(symbol="BTCBUSD", side=side, type="MARKET",quantity=quantity , sideEffectType="AUTO_REPAY",isIsolated=True)
-            break
-    return 'OK'
-
-# JSON body example for ocos: 
-# {
-#     "quantity": "1",
-#     "price_a": "10.00",
-#     "price_b": "5.00"
-# }
-# JSON body example for market: 
-#{
- #   "quantity": "1",
-  #  "side": "SIDE_BUY"
-#}
+        return render_template('oco.html', result=sell_loan)
+    return render_template('oco.html')
 
 if __name__ == '__main__':
     app.run()

@@ -1,0 +1,106 @@
+2022-12-31 10:25:05,621 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 10:25:05,621 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 10:27:28,670 - INFO - 127.0.0.1 - - [31/Dec/2022 10:27:28] "GET /market HTTP/1.1" 200 -
+2022-12-31 10:31:49,172 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 10:31:49,172 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 10:31:54,134 - INFO - 127.0.0.1 - - [31/Dec/2022 10:31:54] "GET /oco HTTP/1.1" 200 -
+2022-12-31 10:36:28,933 - INFO - 127.0.0.1 - - [31/Dec/2022 10:36:28] "POST /oco HTTP/1.1" 200 -
+2022-12-31 10:36:54,929 - INFO - 127.0.0.1 - - [31/Dec/2022 10:36:54] "POST /market HTTP/1.1" 200 -
+2022-12-31 10:45:26,651 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 10:45:26,651 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 10:45:28,088 - INFO - 127.0.0.1 - - [31/Dec/2022 10:45:28] "GET /oco HTTP/1.1" 200 -
+2022-12-31 10:50:40,409 - INFO - 127.0.0.1 - - [31/Dec/2022 10:50:40] "POST /oco HTTP/1.1" 200 -
+2022-12-31 10:54:57,790 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 10:54:57,790 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 10:55:32,553 - INFO - 127.0.0.1 - - [31/Dec/2022 10:55:32] "POST /oco HTTP/1.1" 200 -
+2022-12-31 10:56:26,276 - INFO - 127.0.0.1 - - [31/Dec/2022 10:56:26] "POST /market HTTP/1.1" 200 -
+2022-12-31 10:59:54,330 - INFO - 127.0.0.1 - - [31/Dec/2022 10:59:54] "POST /oco HTTP/1.1" 200 -
+2022-12-31 11:00:12,337 - INFO - 127.0.0.1 - - [31/Dec/2022 11:00:12] "POST /market HTTP/1.1" 200 -
+2022-12-31 11:06:47,621 - INFO - 127.0.0.1 - - [31/Dec/2022 11:06:47] "POST /oco HTTP/1.1" 200 -
+2022-12-31 11:07:38,330 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 11:07:38,330 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 11:07:41,144 - INFO - 127.0.0.1 - - [31/Dec/2022 11:07:41] "POST /market HTTP/1.1" 200 -
+2022-12-31 11:23:52,250 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 11:23:52,250 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 11:23:54,692 - INFO - 127.0.0.1 - - [31/Dec/2022 11:23:54] "GET /oco HTTP/1.1" 200 -
+2022-12-31 11:24:00,816 - INFO - 127.0.0.1 - - [31/Dec/2022 11:24:00] "POST /market HTTP/1.1" 200 -
+2022-12-31 20:16:00,763 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 20:16:00,763 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 20:16:08,015 - INFO - 127.0.0.1 - - [31/Dec/2022 20:16:08] "[32mGET / HTTP/1.1[0m" 302 -
+2022-12-31 20:16:08,024 - INFO - 127.0.0.1 - - [31/Dec/2022 20:16:08] "GET /market HTTP/1.1" 200 -
+2022-12-31 20:16:14,583 - INFO - 127.0.0.1 - - [31/Dec/2022 20:16:14] "GET /oco HTTP/1.1" 200 -
+2022-12-31 20:18:32,326 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 20:18:32,327 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 20:18:57,003 - INFO - 127.0.0.1 - - [31/Dec/2022 20:18:57] "[32mGET / HTTP/1.1[0m" 302 -
+2022-12-31 20:18:57,011 - INFO - 127.0.0.1 - - [31/Dec/2022 20:18:57] "GET /market HTTP/1.1" 200 -
+2022-12-31 20:23:15,660 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 20:23:15,660 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 20:23:18,372 - INFO - 127.0.0.1 - - [31/Dec/2022 20:23:18] "GET /market HTTP/1.1" 200 -
+2022-12-31 20:23:28,267 - INFO - 127.0.0.1 - - [31/Dec/2022 20:23:28] "[32mGET / HTTP/1.1[0m" 302 -
+2022-12-31 20:23:28,270 - INFO - 127.0.0.1 - - [31/Dec/2022 20:23:28] "GET /market HTTP/1.1" 200 -
+2022-12-31 20:24:05,235 - INFO - 127.0.0.1 - - [31/Dec/2022 20:24:05] "GET /market HTTP/1.1" 200 -
+2022-12-31 20:24:12,659 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 20:24:12,659 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 20:24:19,334 - INFO - 127.0.0.1 - - [31/Dec/2022 20:24:19] "GET /market HTTP/1.1" 200 -
+2022-12-31 20:24:20,899 - INFO - 127.0.0.1 - - [31/Dec/2022 20:24:20] "[31m[1mGET /limit HTTP/1.1[0m" 405 -
+2022-12-31 20:24:57,875 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 20:24:57,876 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 20:24:57,877 - INFO -  * Restarting with stat
+2022-12-31 20:24:59,299 - WARNING -  * Debugger is active!
+2022-12-31 20:24:59,305 - INFO -  * Debugger PIN: 100-240-921
+2022-12-31 20:25:04,037 - INFO - 127.0.0.1 - - [31/Dec/2022 20:25:04] "[31m[1mGET /limit HTTP/1.1[0m" 405 -
+2022-12-31 20:25:07,438 - INFO - 127.0.0.1 - - [31/Dec/2022 20:25:07] "[31m[1mGET /limit HTTP/1.1[0m" 405 -
+2022-12-31 20:27:29,579 - INFO -  * Detected change in 'C:\\Users\\mimus\\Documents\\api_trading\\app.py', reloading
+2022-12-31 20:27:29,625 - INFO -  * Restarting with stat
+2022-12-31 20:27:31,188 - WARNING -  * Debugger is active!
+2022-12-31 20:27:31,193 - INFO -  * Debugger PIN: 100-240-921
+2022-12-31 20:27:31,685 - ERROR - 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "C:\Users\mimus\Documents\api_trading\app.py", line 70, in limit
+    quantity = request.form['quantity']
+  File "C:\Users\mimus\anaconda3\envs\paguer\lib\site-packages\werkzeug\datastructures.py", line 375, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-12-31 20:27:31,687 - INFO - 127.0.0.1 - - [31/Dec/2022 20:27:31] "GET /limit HTTP/1.1" 200 -
+2022-12-31 20:31:35,223 - INFO -  * Detected change in 'C:\\Users\\mimus\\Documents\\api_trading\\app.py', reloading
+2022-12-31 20:31:35,261 - INFO -  * Restarting with stat
+2022-12-31 20:31:36,437 - WARNING -  * Debugger is active!
+2022-12-31 20:31:36,443 - INFO -  * Debugger PIN: 100-240-921
+2022-12-31 20:31:37,402 - INFO - 127.0.0.1 - - [31/Dec/2022 20:31:37] "[35m[1mGET /limit HTTP/1.1[0m" 500 -
+2022-12-31 20:31:37,437 - INFO - 127.0.0.1 - - [31/Dec/2022 20:31:37] "GET /limit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-12-31 20:31:37,439 - INFO - 127.0.0.1 - - [31/Dec/2022 20:31:37] "GET /limit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-12-31 20:31:37,471 - INFO - 127.0.0.1 - - [31/Dec/2022 20:31:37] "GET /limit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-12-31 20:31:37,492 - INFO - 127.0.0.1 - - [31/Dec/2022 20:31:37] "[36mGET /limit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-31 20:33:38,476 - INFO -  * Detected change in 'C:\\Users\\mimus\\Documents\\api_trading\\app.py', reloading
+2022-12-31 20:33:39,964 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:39] "[35m[1mGET /limit HTTP/1.1[0m" 500 -
+2022-12-31 20:33:39,989 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:39] "[36mGET /limit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-12-31 20:33:39,992 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:39] "[36mGET /limit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-12-31 20:33:40,003 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:40] "[36mGET /limit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-31 20:33:40,014 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:40] "[36mGET /limit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-31 20:33:43,042 - INFO -  * Restarting with stat
+2022-12-31 20:33:45,957 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-12-31 20:33:45,958 - INFO - [33mPress CTRL+C to quit[0m
+2022-12-31 20:33:45,959 - INFO -  * Restarting with stat
+2022-12-31 20:33:47,375 - WARNING -  * Debugger is active!
+2022-12-31 20:33:47,380 - INFO -  * Debugger PIN: 100-240-921
+2022-12-31 20:33:48,386 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:48] "GET /limit HTTP/1.1" 200 -
+2022-12-31 20:33:49,701 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:49] "GET /limit HTTP/1.1" 200 -
+2022-12-31 20:33:50,348 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:50] "GET /limit HTTP/1.1" 200 -
+2022-12-31 20:33:50,551 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:50] "GET /limit HTTP/1.1" 200 -
+2022-12-31 20:33:50,728 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:50] "GET /limit HTTP/1.1" 200 -
+2022-12-31 20:33:50,912 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:50] "GET /limit HTTP/1.1" 200 -
+2022-12-31 20:33:51,687 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:51] "GET /oco HTTP/1.1" 200 -
+2022-12-31 20:33:52,142 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:52] "GET /market HTTP/1.1" 200 -
+2022-12-31 20:33:52,810 - INFO - 127.0.0.1 - - [31/Dec/2022 20:33:52] "GET /limit HTTP/1.1" 200 -

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container mt-4">
+    <h1>OCO</h1>
+    <form method="post">
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="text" class="form-control" id="quantity" name="quantity" required>
+      </div>
+      <div class="form-group">
+        <label for="price_a">Price A</label>
+        <input type="text" class="form-control" id="price_a" name="price_a" required>
+      </div>
+      <div class="form-group">
+        <label for="price_b">Price B</label>
+        <input type="text" class="form-control" id="price_b" name="price_b" required>
+      </div>
+      <div class="form-group">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="side" id="from_long" value="FROM_LONG" checked>
+          <label class="form-check-label" for="from_long">From Long</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="side" id="from_short" value="FROM_SHORT">
+          <label class="form-check-label" for="from_short">From Short</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    {% if result %}
+      <h2>Result</h2>
+      <pre>{{ result|tojson }}</pre>
+    {% endif %}
+  </div>
+{% endblock %}
